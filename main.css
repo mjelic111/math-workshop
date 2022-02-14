@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width:4em;
+    height: 4em;
+    margin-top: 2em;
+    padding: 0%;
+}
+.task-color{
+    background-color: black;
+}
+
+.opt-color{
+    background-color: #fe4773;
+    color: white;
+    font-weight: bolder;
+    font-size: medium;
+}
