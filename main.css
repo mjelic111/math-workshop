@@ -1,20 +1,124 @@
-body{
-    display: flex;
-    justify-content: center;
-}
-button{
-    width:4em;
-    height: 4em;
-    margin-top: 2em;
-    padding: 0%;
-}
-.task-color{
-    background-color: black;
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
+:root {
+  --primary-color: blue;
+  --button-color: #e783eb;
 }
 
-.opt-color{
-    background-color: #fe4773;
-    color: white;
-    font-weight: bolder;
-    font-size: medium;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: 'Comfortaa', cursive;
 }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-board {
+  background-color: #145214;
+  border: solid 0.5em;
+  margin: 1em;
+  padding: 1em;
+}
+
+.container-board h3 {
+  color: white;
+  margin: 0;
+  padding-bottom: 1em;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.container-board .score {
+  background-color: #2e84b6;
+  color: antiquewhite;
+  width: 6em;
+  margin-bottom: 1em;
+  text-align: center;
+  border-radius: 1em;
+  padding: 0.5em 0;
+  margin-left: auto;
+  font-weight: bold;
+}
+
+.container-board .task {
+  margin-bottom: 1em;
+}
+
+.container-board .task .badge {
+  color: white;
+  background-color: #1c1f20;
+  padding: 0.5em 1em;
+  font-weight: bold;
+}
+
+.options-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #2e84b6;
+  padding: 1em;
+  margin: 0 1em;
+  border-radius: 1em;
+}
+
+.options-container .options-left {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.options-container .options-left .options-group {
+  margin-bottom: 1em;
+}
+
+.options-container .options-left button {
+  width: 4em;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  border: solid 1px var(--button-color);
+  color: black;
+  background-color: var(--button-color);
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.options-container .options-left button:hover {
+  border: solid 1px black;
+  color: var(--button-color);
+  background-color: black;
+  cursor: pointer;
+}
+
+.options-container .options-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.options-container .options-right img {
+  height: 50px;
+  width: auto;
+}
+/*# sourceMappingURL=main.css.map */
