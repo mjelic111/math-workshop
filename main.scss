@@ -9,8 +9,12 @@
 body{
     margin:0;
     padding:0;
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(25deg, #b5254c, #b0557b, #a079ad, #7b9ae1);
     font-family: 'Comfortaa', cursive;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
+
 }
 .container{
     display: flex;
@@ -56,7 +60,7 @@ body{
 .options-container{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(46, 132, 182); 
+    background-image: linear-gradient(25deg, #2a70ad, #4e869b, #609d87, #6bb571); 
     padding: 1em;
     margin: 0 1em;
     border-radius: 1em;
@@ -66,6 +70,9 @@ body{
 
         .options-group{
             margin-bottom: 1em;
+            display: flex;
+            gap: 0 1em;
+
         }
         
         button{
@@ -73,8 +80,8 @@ body{
             padding: 0.5em 1em;
             border-radius: 2em;
             border: solid 1px var(--button-color);
-            color: black;
-            background-color: var(--button-color);
+            color: #4F0F0F;
+            background-image: linear-gradient(113deg, #5700af, #9f4397, #d3787c, #ffad57);
             font-weight: bold;
             font-size: 1.1em;
             

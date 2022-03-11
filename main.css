@@ -7,8 +7,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-image: linear-gradient(25deg, #b5254c, #b0557b, #a079ad, #7b9ae1);
   font-family: 'Comfortaa', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 .container {
@@ -66,7 +69,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #2e84b6;
+  background-image: linear-gradient(25deg, #2a70ad, #4e869b, #609d87, #6bb571);
   padding: 1em;
   margin: 0 1em;
   border-radius: 1em;
@@ -81,6 +84,10 @@ body {
 
 .options-container .options-left .options-group {
   margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 1em;
 }
 
 .options-container .options-left button {
@@ -88,8 +95,8 @@ body {
   padding: 0.5em 1em;
   border-radius: 2em;
   border: solid 1px var(--button-color);
-  color: black;
-  background-color: var(--button-color);
+  color: #4F0F0F;
+  background-image: linear-gradient(113deg, #5700af, #9f4397, #d3787c, #ffad57);
   font-weight: bold;
   font-size: 1.1em;
 }
